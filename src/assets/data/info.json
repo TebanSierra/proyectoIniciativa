@@ -1,0 +1,32 @@
+[
+    {
+        "ruta": "135-I",
+        "nombre": "La Frontera - Estacion Aguacatala",
+        "eta": "7 min",
+        "capacidad": "10/25"
+    },
+    {
+        "ruta": "303",
+        "nombre": "Circular Sur Derecha",
+        "eta": "10 minutos",
+        "capacidad": "22/25"
+    },
+    {
+        "ruta": "302",
+        "nombre": "Circular Sur Izquierda",
+        "eta": "2 minutos",
+        "capacidad": "18/25"
+    },
+    {
+        "ruta": "305",
+        "nombre": "Comercial Hotelera Izquierda",
+        "eta": "15 min",
+        "capacidad": "19/20"
+    },
+    {
+        "ruta": "304",
+        "nombre": "Comercial Hotelera Derecha",
+        "eta": "12 min",
+        "capacidad": "3/20"
+    }
+]

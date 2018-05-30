@@ -1,14 +1,32 @@
 <ion-header>
-  <ion-navbar class="customNavbar" color='primary'>
+  <ion-navbar class="customNavbar" color='danger'>
+      <button ion-button [menuToggle]="activeMenu">
+        <ion-icon name="menu"></ion-icon>
+      </button>
     <ion-title>
-      Ionic Blank
+      Tu Transporte
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding class="pantalla">
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content padding class ="pantalla">
+  <ion-list>
+    <br>
+    <button ion-item (click)="goMapa()">
+        <ion-icon name="map"></ion-icon>
+        <h2 class = "titulo"><b>Mapa de la ruta</b></h2>
+    </button>
+    <br>
+    <button ion-item (click)="goBus()" >
+        <ion-icon name="bus"></ion-icon>
+        <h2 class = "titulo"><b>Tiempo estimado</b></h2>
+    </button>
+    <br>
+  </ion-list>
+
 </ion-content>
+<ion-tabs color='dark'>
+    <ion-tab title='Mapa' tabIcon='map' [root]='tabMap'></ion-tab>
+    <ion-tab title='Capacidad' tabIcon='bus' [root]='tabBus'></ion-tab>
+    <ion-tab title='ETA' tabIcon='timer' [root]='tabETA'></ion-tab>
+</ion-tabs>
